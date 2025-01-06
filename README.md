@@ -36,4 +36,9 @@ python app/app.py
 
 ### Notebooks
 - **Azure Notebook** – Implements Generative AI (Gemini Flash 2.0), Sentiment Analysis, and Recommender System with Flask API.  
-- **Colab Notebook** – Focuses on Exploratory Data Analysis (EDA) and Time-Series Forecasting with XGBoost and Prophet.  
+- **Colab Notebook** – Focuses on Exploratory Data Analysis (EDA) and Time-Series Forecasting with XGBoost and Prophet.
+
+### Datasets
+- **Azure Notebook Datasets** - df_meta.csv supports the recommender system, and the cosine_similarity_scores.pkl and count_vectorizer.pkl are used to build the recommender system; the count_vectorizer turns text into a vector based on the frequency (count) of each word that occurs in the entire text.
+- **Colab Notebook Datasets** - The df_review.csv dataset was lost, but any review dataset with date and review columns will work. To test the EDA graphs and Time-Series Forecasting, change the column names accordingly: e.g. for a similar dataset, change the 'review_date' column to 'timestamp', the 'text' column to 'review_body', etc.
+                              - The df_meta.csv dataset for the Azure Notebook Dataset will work for the Colab Notebook EDA graphs.
