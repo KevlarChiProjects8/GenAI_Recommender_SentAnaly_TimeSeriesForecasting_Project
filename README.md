@@ -33,3 +33,7 @@ pip install -r requirements.txt
 
 # Start Flask server
 python app/app.py
+
+### Notebooks
+- **Azure Notebook** – Implements Generative AI (Gemini Flash 2.0), Sentiment Analysis, and Recommender System with Flask API.  
+- **Colab Notebook** – Focuses on Exploratory Data Analysis (EDA) and Time-Series Forecasting with XGBoost and Prophet.  
