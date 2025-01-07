@@ -22,12 +22,6 @@ This project is a Flask API-based AI system for product recommendations and sent
 - **Python, Flask, Google Generative AI, HuggingFace, SHAP, Pandas, Scikit-learn, Prophet, XGBoost**  
 - **Postman for API testing**  
 
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/username/AI_Recommender_Project.git
-cd AI_Recommender_Project
-
 # Install dependencies
 pip install -r requirements.txt
 
@@ -39,6 +33,4 @@ python app/app.py
 - **Colab Notebook** – Focuses on Exploratory Data Analysis (EDA) and Time-Series Forecasting with XGBoost and Prophet.
 
 ### Datasets
-- **Azure Notebook Datasets** - df_meta.csv supports the recommender system, and the cosine_similarity_scores.pkl and count_vectorizer.pkl are used to build the recommender system; the count_vectorizer turns text into a vector based on the frequency (count) of each word that occurs in the entire text.
-- **Colab Notebook Datasets** - The df_review.csv dataset was lost, but any review dataset with date and review columns will work. To test the EDA graphs and Time-Series Forecasting, change the column names accordingly: e.g. for a similar dataset, change the 'review_date' column to 'timestamp', the 'text' column to 'review_body', etc.
-                              - The df_meta.csv dataset for the Azure Notebook Dataset will work for the Colab Notebook EDA graphs.
+- df_meta was too large to upload, and the df_review dataset was lost, but any similar Amazon review dataset with product titles, reviews, and date columns will work with the code as long as the respective variable names are changed, e.g. for the RecommenderSystem_AzureNotebook, if it were a similar dataset with an adjacent title column name 'product_name', change the column 'product_name' to title using the pd.rename({'Old Column'}: {'title'}, inplace=True) command.
